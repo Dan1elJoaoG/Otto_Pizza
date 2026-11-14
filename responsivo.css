@@ -1,0 +1,358 @@
+/* OTTO PIZZA — RESPONSIVIDADE
+   Arquivo complementar: preserva os estilos originais de cada pagina. */
+*, *::before, *::after { box-sizing: border-box; }
+html { max-width: 100%; }
+body { min-width: 0; overflow-x: hidden; }
+img, video, iframe { max-width: 100%; }
+img { object-fit: contain; }
+input, button, select, textarea { max-width: 100%; }
+
+@media (max-width: 1100px) {
+  .DivCabeçario { height: auto; min-height: 88px; }
+  .DivTextosCabeçario { min-height: 88px; padding: 12px 3%; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .logo { width: auto; height: 58px; max-width: 120px; margin: 0; }
+  .TextoCabecario { font-size: 16px; text-decoration: none; white-space: nowrap; }
+  .DivPesquisa { width: min(330px, 45%); height: 42px; min-width: 180px; }
+  .DivUsurio { width: 42px; height: 42px; flex: 0 0 42px; }
+  .DivCarrinho { width: auto; height: 44px; margin: 0; gap: 6px; }
+  .DivDivCarrinho { width: 42px; height: 42px; flex: 0 0 42px; }
+  .TextoCarrinho { font-size: 13px; margin: 0; white-space: nowrap; }
+  .DivProdutosEmAlta { height: auto; min-height: 0; display: block; padding: 26px 0; }
+  .DivTextoProdutosEmAlta { height: auto; margin-bottom: 20px; }
+  .DivDivTextoProdutos { width: 92%; gap: 15px; }
+  .DivProdutosProdutos { width: 94%; height: auto; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
+  .DivProdutosFundo { min-width: 0; }
+  .FundoProdutos { width: 100%; height: auto; min-height: 340px; padding: 15px; grid-template-rows: minmax(130px, 1fr) auto auto; gap: 10px; }
+  .FundoProdutos .Produto img { max-height: 180px; width: 100%; object-fit: contain; }
+  .ProdutoBotao { min-height: 52px; display: flex; align-items: center; justify-content: center; }
+  .BotaoAdicionarProduto { width: 100%; min-height: 44px; height: auto; margin: 0; cursor: pointer; }
+  .TituloProdutoVenda { font-size: clamp(18px,2.3vw,25px); }
+  .TextoProdutoVenda { font-size: clamp(14px,1.7vw,19px); }
+  .TextoAdicionarProduto { font-size: clamp(16px,2vw,22px); }
+  .DivRodape { height: auto; min-height: 120px; padding: 20px 12px; gap: 12px; }
+  .TextoRodape { font-size: 13px; text-align: center; }
+  .TextoBotaoLocal { font-size: 18px; }
+  .DivPizzasTradicionais { width: 94%; height: auto; grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: auto; gap: 16px; }
+  .DivTituloPizzasTradicionais, .divEscolher { height: auto; min-height: 75px; }
+  .DivCentro { height: auto; min-height: 260px; }
+  .DivNovasEscolhas { height: auto; display: block; padding: 20px 0; }
+  .DivProdutosEscolhas { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; padding: 12px; }
+  .FundoProdutosEscolhas { width: 100%; height: auto; min-height: 180px; padding: 12px; }
+  .DivFundoCadastro, .DivFundoLogin { width: min(90%,600px); }
+  .DivCadastro, .DivLogin { height: auto; min-height: 70vh; padding: 28px 0; }
+  .DivTextos { height: auto; min-height: 110px; padding: 24px 5%; }
+}
+
+@media (max-width: 700px) {
+  .DivCabeçario { border-radius: 0 0 18px 18px; }
+  .DivCabeçario::before { border-radius: 0 0 18px 18px; }
+  .DivTextosCabeçario { display: flex; justify-content: center; align-items: center; gap: 10px 12px; padding: 10px 12px 12px; }
+  .logo { height: 48px; max-width: 105px; order: 0; }
+  .DivUsurio { order: 1; margin-left: auto; width: 38px; height: 38px; flex-basis: 38px; border-radius: 10px; }
+  .DivCarrinho { order: 2; height: 40px; gap: 5px; }
+  .DivDivCarrinho { width: 38px; height: 38px; flex-basis: 38px; border-radius: 10px; }
+  .TextoCarrinho { font-size: 12px; }
+  .TextoCabecario { order: 4; font-size: 14px; text-align: center; padding: 6px 4px; }
+  .DivPesquisa { order: 3; width: 100%; height: 42px; flex: 0 0 100%; min-width: 0; border-radius: 22px; }
+  .CampoPesquisa { font-size: 14px; }
+  .BotaoPesquisa { min-width: 38px; }
+  .DivPropaganda { height: auto; padding: 22px 0; }
+  .divFundoPropaganda { width: 94%; height: auto; min-height: 0; }
+  .DivDivPropaganda { grid-template-columns: minmax(0,1fr); height: auto; }
+  .TextoPropaganda { padding: 24px 16px 8px; margin: 0; }
+  .TituloPropaganda { font-size: clamp(28px,8vw,40px); margin: 0 0 12px; }
+  .TextoTextoPropaganda { font-size: 16px; margin: 0 0 15px; }
+  .botaoPropaganda { width: min(100%,260px); min-height: 48px; height: auto; margin: 8px 0; }
+  .TextoBotao { font-size: 20px; }
+  .DivImagem { align-items: center; }
+  .imagemPropaganda { width: min(85%,350px); height: auto; max-height: 280px; }
+  .DivDivTextoProdutos { width: 92%; align-items: flex-start; }
+  .TituloProdutos { font-size: clamp(24px,7vw,34px); }
+  .TextoProdutos { font-size: 15px; line-height: 1.5; }
+  .DivBotaoProdutos { width: auto; height: auto; min-width: 44px; }
+  .botaoProdutos { width: 44px; height: 44px; border-radius: 12px; }
+  .TextoBotaoProdutos { font-size: 20px; }
+  .DivProdutosProdutos, .DivPizzasTradicionais { width: 92%; grid-template-columns: minmax(0,1fr); gap: 16px; margin: 0 auto; }
+  .FundoProdutos { min-height: 0; grid-template-rows: 160px auto auto; padding: 14px; }
+  .FundoProdutos .Produto img { max-height: 155px; }
+  .Produtos { gap: 7px; }
+  .TituloProdutoVenda { font-size: 21px; margin-left: 0; }
+  .TextoProdutoVenda { font-size: 15px; margin-left: 0; }
+  .DivLocais, .DivDelivery { height: auto; padding: 20px 0; }
+  .divFundoLocais { width: 94%; height: auto; grid-template-columns: minmax(0,1fr); gap: 16px; }
+  .FundoLocais { width: 100%; height: auto; min-height: 240px; grid-template-columns: minmax(0,1fr); padding: 14px; }
+  .DivFundoDelivery { width: 94%; height: auto; grid-template-columns: minmax(0,1fr); padding: 18px; gap: 12px; }
+  .DivTituloLocal { height: auto; min-height: 70px; }
+  .DivImagemLocal img, .DivImagemDelivery img { max-height: 260px; width: auto; }
+  .DivRodape { grid-template-columns: minmax(0,1fr); justify-items: center; text-align: center; padding: 24px 14px; }
+  .DivNaoCentro { align-items: center; text-align: center; }
+  .divEscolher { padding: 12px; }
+  .DivDosbotoes { max-width: 100%; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .FundoBotaoEscolher { min-width: 0; height: auto; min-height: 42px; }
+  .TituloPizzas { font-size: clamp(12px,3.5vw,16px); }
+  .DivTituloPizzasTradicionais { padding: 12px; }
+  .DivCentro { width: 100%; padding: 16px 4%; }
+  .ItemCarrinho { width: 100%; min-width: 0; height: auto; flex-wrap: wrap; gap: 10px; padding: 12px; }
+  .ImagemItemCarrinho { max-width: 105px; max-height: 105px; }
+  .InformacoesItemCarrinho { min-width: 0; flex: 1 1 150px; }
+  .ControlesCarrinho { flex-wrap: wrap; gap: 8px; }
+  .RodapeCarrinho { flex-wrap: wrap; gap: 12px; height: auto; }
+  .BotaoFinalizar { min-height: 44px; }
+  .DivProdutosEscolhas { grid-template-columns: minmax(0,1fr); }
+  .FundoProdutosEscolhas { grid-template-columns: 40% 60%; }
+  .DivTextosTituloCarrinhos { height: auto; padding: 12px; }
+  .DivCadastro, .DivLogin { height: auto; min-height: 70vh; padding: 24px 0; }
+  .DivFundoCadastro, .DivFundoLogin { width: 94%; height: auto; min-height: 0; padding: 18px 12px; }
+  .DivFundoLogin { grid-template-rows: none; }
+  .DivFundoFlex, .DivTextoForms { min-width: 0; }
+  .FormsInput { width: 100%; min-width: 0; min-height: 42px; font-size: 16px; }
+  .DivTituloCadastro { height: auto; min-height: 65px; }
+  .TituloCadastro { font-size: clamp(25px,7vw,36px); }
+  #formCadastro { width: 100%; }
+  #btnCadastrar, .BotaoExportar { width: 100%; min-height: 45px; height: auto; font-size: 17px; }
+  .TextoCadastro { font-size: 16px; }
+  .DivTextos .D01, .D01 { font-size: clamp(25px,7vw,34px); }
+  .DivTextos .D02, .D02 { font-size: 16px; }
+  .DivCentroPedidos { width: 94%; margin: 16px auto 40px; }
+  .CartaoPedido { padding: 16px; }
+  .CabecalhoPedido { flex-wrap: wrap; }
+  .ItemPedido { flex-wrap: wrap; overflow-wrap: anywhere; }
+  .RodapePedido { gap: 10px; }
+}
+
+@media (max-width: 390px) {
+  .DivTextosCabeçario { gap: 7px; }
+  .TextoCabecario { font-size: 12px; }
+  .logo { height: 42px; }
+  .DivUsurio, .DivDivCarrinho { width: 34px; height: 34px; flex-basis: 34px; }
+  .TextoCarrinho { font-size: 11px; }
+  .FundoProdutos { grid-template-rows: 140px auto auto; }
+}
+
+/* CORRECOES: cardapio, menu de categorias e rodape */
+@media (max-width: 1100px) {
+  .PizzasTradicionais { height: auto !important; min-height: 0 !important; display: block !important; padding: 12px 0 35px; }
+  .DivPizzasTradicionais { height: auto !important; grid-template-rows: none !important; align-items: stretch; }
+  .DivProdutosFundo { min-height: 0; padding: 8px 0; }
+  .PizzasTradicionais .FundoProdutos { margin: 0; width: 100%; height: auto !important; }
+  .divEscolher { height: auto !important; min-height: 0; padding: 12px 0; display: flex !important; }
+  .DivDosbotoes { width: 94%; height: auto !important; min-height: 55px; display: flex !important; flex-wrap: wrap; justify-content: center; gap: 6px; padding: 8px; }
+  .FundoBotaoEscolher { width: auto; flex: 1 1 155px; min-height: 48px; display: flex !important; }
+  .DivDentroEscolher { width: 100%; height: auto; min-height: 44px; display: flex; gap: 7px; padding: 7px; }
+  .IconPizza { height: 23px; width: 23px; flex-shrink: 0; }
+  .TituloPizzas { margin: 0; font-size: 13px; }
+  .DivRodape { clear: both; position: relative; }
+}
+@media (max-width: 700px) {
+  .DivPizzasTradicionais { grid-template-columns: minmax(0,1fr) !important; grid-template-rows: none !important; }
+  .PizzasTradicionais .FundoProdutos { min-height: 300px; grid-template-rows: 160px auto 52px; }
+  .DivDosbotoes { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+  .FundoBotaoEscolher { width: 100%; min-width: 0; }
+  .DivDentroEscolher { justify-content: center; }
+  .DivTituloPizzasTradicionais { height: auto; min-height: 65px; padding: 10px 0; }
+  .DivDentroTituloPizzasTradicionais { width: 92%; }
+  .TItuloPizzasTradicionais { font-size: clamp(24px,7vw,35px); }
+}
+@media (max-width: 600px) {
+
+    .FundoProdutosEscolhas {
+        height: auto !important;
+        min-height: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        padding: 18px !important;
+        box-sizing: border-box !important;
+    }
+
+    .FundoProdutosEscolhas .Produto {
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .FundoProdutosEscolhas .PizzasEscolhas {
+        width: 150px !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    .FundoProdutosEscolhas .Produtos {
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        text-align: center !important;
+    }
+
+    .FundoProdutosEscolhas .ProdutoBotao {
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 10px !important;
+    }
+
+    .FundoProdutosEscolhas .BotaoAdicionarProduto {
+        position: static !important;
+        width: 100% !important;
+        min-height: 45px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+}
+@media (max-width: 600px) {
+
+    .DivCadastro form {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .DivCadastro label {
+        display: block !important;
+        position: static !important;
+        margin-top: 12px !important;
+        margin-bottom: 6px !important;
+        line-height: 1.4 !important;
+    }
+
+    .DivCadastro input {
+        position: static !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin: 0 0 10px !important;
+    }
+}
+@media (max-width: 700px) {
+
+    .DivProdutosEscolhas {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        height: auto !important;
+    }
+
+    .FundoProdutosEscolhas,
+    .FundoProdutosEscolhas.FundoProdutos {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 20px !important;
+        gap: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    .FundoProdutosEscolhas .Produto {
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .FundoProdutosEscolhas .PizzasEscolhas {
+        width: 160px !important;
+        height: auto !important;
+        max-height: 160px !important;
+        object-fit: contain !important;
+    }
+
+    .FundoProdutosEscolhas .Produtos {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        width: 100% !important;
+        height: auto !important;
+        gap: 10px !important;
+
+        text-align: center !important;
+    }
+
+    .FundoProdutosEscolhas .TituloProdutoVenda,
+    .FundoProdutosEscolhas .TextoProdutoVenda {
+        position: static !important;
+        margin: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        text-align: center !important;
+    }
+
+    .FundoProdutosEscolhas .ProdutoBotao {
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+    .FundoProdutosEscolhas .BotaoAdicionarProduto {
+        position: static !important;
+        width: 100% !important;
+        min-height: 50px !important;
+        height: auto !important;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .FundoProdutosEscolhas .TextoAdicionarProduto {
+        margin: 0 !important;
+    }
+}
+@media (max-width: 700px) {
+
+    #formCadastro {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #formCadastro label {
+        position: static !important;
+        display: block !important;
+
+        width: 100% !important;
+        height: auto !important;
+
+        margin: 16px 0 8px !important;
+        line-height: 1.4 !important;
+        text-align: left !important;
+    }
+
+    #formCadastro .FormsInput {
+        position: static !important;
+        display: block !important;
+
+        width: 100% !important;
+        height: 46px !important;
+
+        margin: 0 0 12px !important;
+        padding: 10px 14px !important;
+        box-sizing: border-box !important;
+    }
+
+    .DivFundoCadastro {
+        height: auto !important;
+        padding: 25px 18px !important;
+    }
+
+    #btnCadastrar {
+        margin-top: 18px !important;
+    }
+}

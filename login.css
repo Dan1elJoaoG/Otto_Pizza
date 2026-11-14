@@ -1,0 +1,603 @@
+body{
+    margin: 0;
+    background-color: #F2E3C9;
+}
+.DivCabeçario{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  background-color: #382922;
+  isolation: isolate;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  height: 11vh;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.DivCabeçario::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_cabeçario.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.DivTextosCabeçario{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    height: 90%;
+    width: auto;
+    margin-left: 1%;
+}
+.TextoCabecario{
+    font-size: 22px;
+    color: #F2E3C9;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.TextoCabecario:hover{
+    color: #B92622;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.DivPesquisa{
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: white;
+}
+.DivUsurio{
+    width: 3.3%;
+    height: 55%;
+    border-radius: 15px;
+    background-color: #F2E3C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.DivUsurio:hover{
+    background-color: #B92622;
+    transition: 0.3s;
+    .perfil{
+  fill: #F2E3C9;
+}
+}
+.perfil{
+    width: 80%;
+    height: auto;
+}
+.DivCarrinho{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+
+}
+.DivDivCarrinho{
+    width: 33%;
+    height: 55%;
+    background-color: #B92622;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.DivDivCarrinho:hover{
+    background-color: #F2E3C9;
+    transition: 0.3s;
+    .Carrinho{
+    fill: #B92622;
+}
+}
+.Carrinho{
+    width: 80%;
+    height: auto;
+}
+.TextoCarrinho{
+    font-size: 15px;
+    color: #F2E3C9;
+    font-family: "DM Sans", sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.perfil{
+  fill: #B92622;
+  transition: fill 0.3s ease-in-out;
+}
+.perfil:hover{
+  fill: #F2E3C9;
+}
+.Carrinho{
+    fill: #F2E3C9;
+    transition: fill 0.3s ease-in-out;
+}
+.DivLogin{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivFundoLogin{
+  position: relative;
+  background-color: #D5A052;
+  isolation: isolate;
+  width: 40%;
+  height: 65%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: repeat(4, 25%);
+}
+
+.DivFundoLogin::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_Produtos.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+  border-radius: 15px;
+}
+.FormsInput{
+    width: 65%;
+    height: 45%;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #382922;
+    font-family: "Fraunces", serif;
+}
+.DivTextoForms{
+    width: 65%;
+}
+.TextoForms{
+    font-size: 22px;
+    color: #382922;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    margin: 0;
+}
+.DivTituloCadastro{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivFundoTituloCadastro{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.TituloCadastro{
+    font-size: 40px;
+    color: #B92622;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    margin: 0;
+}
+.BotaoForms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnCadastrar{
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    background-color: #B92622;
+    font-size: 22px;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    color: white;
+}
+.BotaoExportar{
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    background-color: #526747;
+    font-size: 22px;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    color: white;
+}
+.TextoCadastro{
+    font-size: 20px;
+    color: #382922;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    margin: 0;
+}
+.AhrefEntrar{
+    color: #B92622;
+}
+.DivFundoFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.DivCarrinho{
+    text-decoration: none;
+}
+.DivRodape{
+  position: relative;
+  background-color: #382922;
+  isolation: isolate;
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.DivRodape::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_cabeçario.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.DivNaoCentro{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.TextoRodape{
+    font-size: 15px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 1%;
+}
+.botaoProdutos:hover{
+    background-color: #526747;
+    transition: 0.3s;
+}
+.TextoBotaoLocal{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    margin: 0;
+}
+.DivPesquisa {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.CampoPesquisa {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 2%;
+}
+
+.CampoPesquisa::placeholder {
+    color: #999999;
+}
+
+.BotaoPesquisa {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.DivPesquisa:focus-within {
+    border-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .DivPesquisa {
+        width: 180px;
+    }
+
+    .CampoPesquisa {
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   MODO DARK ROCK - LOGIN
+   ========================================== */
+
+/* FUNDO PRINCIPAL */
+body.dark-mode {
+    background-color: #09090B;
+    color: #F2F2F2;
+}
+
+/* ===== CABEÇALHO ===== */
+
+body.dark-mode .DivCabeçario {
+    background-color: #050506;
+    border-bottom: 2px solid #A92332;
+}
+
+body.dark-mode .DivCabeçario::before {
+    background-image: url("cabecalho-rock.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+body.dark-mode .TextoCabecario,
+body.dark-mode .TextoCarrinho {
+    color: #F2F2F2;
+}
+
+body.dark-mode .TextoCabecario:hover {
+    color: #E34A57;
+}
+
+/* ===== BARRA DE PESQUISA ===== */
+
+body.dark-mode .DivPesquisa {
+    background-color: #202026;
+    border: 1px solid #484850;
+}
+
+body.dark-mode .CampoPesquisa {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+body.dark-mode .CampoPesquisa::placeholder {
+    color: #A0A0AA;
+}
+
+body.dark-mode .BotaoPesquisa {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+body.dark-mode .DivPesquisa:focus-within {
+    border-color: #E34A57;
+}
+
+/* ===== PERFIL E CARRINHO ===== */
+
+body.dark-mode .DivUsurio {
+    background-color: #25252C;
+}
+
+body.dark-mode .DivUsurio:hover {
+    background-color: #A92332;
+}
+
+body.dark-mode .perfil {
+    fill: #FFFFFF;
+}
+
+body.dark-mode .DivDivCarrinho {
+    background-color: #A92332;
+}
+
+body.dark-mode .DivDivCarrinho:hover {
+    background-color: #D13A48;
+}
+
+body.dark-mode .Carrinho {
+    fill: #FFFFFF;
+}
+
+/* ===== FORMULÁRIO DE LOGIN ===== */
+
+body.dark-mode .DivFundoLogin {
+    background-color: #1B1B21;
+    border: 1px solid #393940;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .DivFundoLogin::before {
+    opacity: 0.07;
+}
+
+/* TÍTULO LOGIN */
+
+body.dark-mode .TituloCadastro {
+    color: #E34A57;
+}
+
+/* TEXTOS DOS CAMPOS */
+
+body.dark-mode .TextoForms {
+    color: #E0E0E5;
+}
+
+/* CAMPOS DE E-MAIL E SENHA */
+
+body.dark-mode .FormsInput {
+    background-color: #25252C;
+    color: #FFFFFF;
+    border: 1px solid #484850;
+    outline: none;
+    padding-left: 12px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+body.dark-mode .FormsInput::placeholder {
+    color: #9999A3;
+}
+
+body.dark-mode .FormsInput:focus {
+    border-color: #E34A57;
+    box-shadow: 0 0 0 3px rgba(227,74,87,0.15);
+}
+
+/* ===== BOTÃO ENTRAR ===== */
+
+/* Seu CSS utiliza o ID btnCadastrar */
+body.dark-mode #btnCadastrar {
+    background-color: #A92332;
+    color: #FFFFFF;
+    border: 1px solid #A92332;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+body.dark-mode #btnCadastrar:hover {
+    background-color: #D13A48;
+    border-color: #D13A48;
+    transform: translateY(-2px);
+}
+
+/* ===== BOTÃO EXPORTAR, SE EXISTIR ===== */
+
+body.dark-mode .BotaoExportar {
+    background-color: #303039;
+    color: #FFFFFF;
+    border: 1px solid #575760;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+body.dark-mode .BotaoExportar:hover {
+    background-color: #A92332;
+    border-color: #A92332;
+}
+
+/* ===== TEXTO DE CADASTRO ===== */
+
+body.dark-mode .TextoCadastro {
+    color: #D0D0D7;
+}
+
+/* LINK PARA CADASTRAR */
+
+body.dark-mode .AhrefEntrar {
+    color: #F06A75;
+    text-decoration: none;
+}
+
+body.dark-mode .AhrefEntrar:hover {
+    color: #FF8C95;
+    text-decoration: underline;
+}
+
+/* ===== RODAPÉ ===== */
+
+body.dark-mode .DivRodape {
+    background-color: #050506;
+    border-top: 2px solid #A92332;
+}
+
+body.dark-mode .DivRodape::before {
+    background-image: url("cabecalho-rock.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+body.dark-mode .TextoRodape {
+    color: #F2F2F2;
+}
+
+body.dark-mode .DivRodape a {
+    color: #F2F2F2;
+}
+
+body.dark-mode .DivRodape a:hover {
+    color: #E34A57;
+}
+
+/* ===== TRANSIÇÕES ===== */
+
+body,
+.DivCabeçario,
+.DivRodape,
+.DivPesquisa,
+.DivUsurio,
+.DivDivCarrinho,
+.DivFundoLogin,
+.FormsInput,
+#btnCadastrar,
+.BotaoExportar {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* ===== BOTÃO SOL E LUA ===== */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 22px;
+    left: 22px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #17171C;
+    border: 2px solid #393940;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 18px #0005;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #25252C;
+    color: #FFFFFF;
+    border-color: #A92332;
+}
+
+.theme-toggle svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}

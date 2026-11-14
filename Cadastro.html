@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="Carrinho.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="Icon.png">
+    <link rel="stylesheet" href="Cadastro.Css">
+    <script src="Cadastro.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+
+<body>
+    <div class="DivCabeçario">
+        <div class="DivTextosCabeçario">
+            <img src="Logo.png" class="logo">
+            <a href="index.html" class="TextoCabecario">Inicio</a>
+            <a href="cardapio.html" class="TextoCabecario">Cardápio</a>
+            <a href="Pedidos.html" class="TextoCabecario">Pedidos</a>
+            <div class="DivPesquisa">
+                <input type="search" id="campoPesquisa" class="CampoPesquisa"
+                    placeholder="Buscar pizzas, bebidas, combos..." aria-label="Pesquisar produtos">
+                <button type="button" class="BotaoPesquisa" id="botaoPesquisa">
+                    🔍
+                </button>
+            </div>
+            <a href="Cadastro.html" class="DivUsurio">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="perfil"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
+            </a>
+            <a href="Carrinho.html" class="DivCarrinho">
+                <div class="DivDivCarrinho">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="Carrinho"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"/></svg>
+                </div>
+                <p class="TextoCarrinho">
+                    R$ 0,00
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="DivCadastro">
+        <div class="DivFundoCadastro">
+            <form class="FormsCadastro" id="formCadastro">
+                <div class="DivFundoFlex">
+                    <p class="TituloCadastro">Crie sua conta</p>
+                    <p class="TextoCadastro">Faça parte da nossa familia e peça sua pizza favorita</p>
+                </div>
+                <div class="DivFundoFlex">
+                    <div class="DivTextoForms">
+                        <p class="TextoForms">Nome Completo:</p>
+                    </div>
+                    <input type="text" id="txtNome" required class="FormsInput">
+                </div>
+                <div class="DivFundoFlex">
+                    <div class="DivTextoForms">
+                        <p class="TextoForms">Telefone:</p>
+                    </div>
+                    <input type="tel" id="txtTelefone" required class="FormsInput" oninput=mascara_telefone()
+                        maxlength="16">
+                </div>
+                <div class="DivFundoFlex">
+                    <div class="DivTextoForms">
+                        <p class="TextoForms">E-Mail:</p>
+                    </div>
+                    <input type="email" id="txtEmail" required class="FormsInput">
+                </div>
+                <div class="DivFundoFlex">
+                    <div class="DivTextoForms">
+                        <p class="TextoForms">Endereço:</p>
+                    </div>
+                    <input type="text" id="txtEndereco" required class="FormsInput">
+                </div>
+                <div class="DivFundoFlex">
+                    <div class="DivTextoForms">
+                        <p class="TextoForms">Senha:</p>
+                    </div>
+                    <input type="password" id="txtSenha" required class="FormsInput">
+                </div>
+                <div class="DivFundoFlex">
+                    <div class="DivTextoForms">
+                        <p class="TextoForms">Confirmar Senha:</p>
+                    </div>
+                    <input type="password" id="txtConfirmarSenha" required class="FormsInput">
+                </div>
+                <div class="BotaoForms">
+                    <button type="submit" id="btnCadastrar">
+                        CADASTRAR
+                    </button>
+                </div>
+                <div class="BotaoForms">
+                    <button type="button" onclick="exportarClientes()" class="BotaoExportar">
+                        EXPORTAR CLIENTES
+                    </button>
+                </div>
+                <div class="DivFundoFlex">
+                    <p class="TextoCadastro">Já tem uma conta? <a href="login.html" class="AhrefEntrar">Entrar</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="DivRodape">
+        <div class="DivCentro1">
+            <img src="Logo.png">
+        </div>
+        <div class="DivNaoCentro">
+            <p class="TextoRodape">
+                © 2026 Otto Pizza. Todos direitos reservados.
+            </p>
+        </div>
+        <div></div>
+    </div>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Ativar modo escuro" title="Alternar tema">
+    </button>
+</body>
+</html>

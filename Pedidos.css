@@ -1,0 +1,674 @@
+body {
+    margin: 0;
+    background-color: #F2E3C9;
+}
+
+.DivCabeçario {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #382922;
+    isolation: isolate;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    height: 11vh;
+}
+
+.DivCabeçario::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(Background_cabeçario.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.DivTextosCabeçario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 96%;
+    width: auto;
+    margin-left: 1%;
+}
+
+.TextoCabecario {
+    font-size: 22px;
+    color: #F2E3C9;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.TextoCabecario:hover {
+    color: #B92622;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.DivPesquisa {
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.DivUsurio {
+    width: 3.3%;
+    height: 55%;
+    border-radius: 15px;
+    background-color: #F2E3C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.DivUsurio:hover {
+    background-color: #B92622;
+    transition: 0.3s;
+
+    .perfil {
+        fill: #F2E3C9;
+    }
+}
+
+.perfil {
+    width: 80%;
+    height: auto;
+}
+
+.DivCarrinho {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.DivDivCarrinho {
+    width: 33%;
+    height: 55%;
+    background-color: #B92622;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.DivDivCarrinho:hover {
+    background-color: #F2E3C9;
+    transition: 0.3s;
+
+    .Carrinho {
+        fill: #B92622;
+    }
+}
+
+.Carrinho {
+    width: 80%;
+    height: auto;
+}
+
+.TextoCarrinho {
+    font-size: 15px;
+    color: #F2E3C9;
+    font-family: "DM Sans", sans-serif;
+    margin-left: 5%;
+}
+
+.perfil {
+    fill: #B92622;
+    transition: fill 0.3s ease-in-out;
+}
+
+.perfil:hover {
+    fill: #F2E3C9;
+}
+
+.Carrinho {
+    fill: #F2E3C9;
+    transition: fill 0.3s ease-in-out;
+}
+
+.DivTextos {
+    height: 15vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    padding-left: 5%;
+    font-weight: 900;
+
+    .D01 {
+        font-size: 40px;
+        color: #526747;
+
+    }
+    .D02 {
+        color: #382922;
+        font-size: 23px;
+    }
+
+   
+}
+
+/* Área do histórico de pedidos */
+.DivCentroPedidos {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cartão de cada pedido */
+.CartaoPedido {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho do pedido */
+.CabecalhoPedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.CabecalhoPedido h2 {
+    margin: 0;
+    font-family: "Fraunces", serif;
+    font-size: 23px;
+}
+
+/* Status */
+.StatusPedido {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Data */
+.DataPedido {
+    color: #777;
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* Produtos do pedido */
+.ListaItensPedido {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.ItemPedido {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 8px 0;
+    font-size: 15px;
+}
+
+/* Valor total */
+.RodapePedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.RodapePedido strong:last-child {
+    color: #218838;
+    font-size: 22px;
+}
+
+/* Quando não houver pedidos */
+.PedidoVazio {
+    text-align: center;
+    background: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+.PedidoVazio h2 {
+    font-family: "Fraunces", serif;
+}
+
+.PedidoVazio a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+    .CartaoPedido {
+        padding: 18px;
+    }
+
+    .CabecalhoPedido h2 {
+        font-size: 19px;
+    }
+
+    .ItemPedido {
+        font-size: 13px;
+    }
+
+    .RodapePedido {
+        font-size: 15px;
+    }
+}
+.DivCarrinho{
+    text-decoration: none;
+}
+.DivRodape{
+  position: relative;
+  background-color: #382922;
+  isolation: isolate;
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.DivRodape::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_cabeçario.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.DivNaoCentro{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.TextoRodape{
+    font-size: 15px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 1%;
+}
+.botaoProdutos:hover{
+    background-color: #526747;
+    transition: 0.3s;
+}
+.TextoBotaoLocal{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    margin: 0;
+}
+.DivPesquisa {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.CampoPesquisa {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 2%;
+}
+
+.CampoPesquisa::placeholder {
+    color: #999999;
+}
+
+.BotaoPesquisa {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.DivPesquisa:focus-within {
+    border-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .DivPesquisa {
+        width: 180px;
+    }
+
+    .CampoPesquisa {
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   MODO DARK ROCK - PÁGINA DE PEDIDOS
+   ========================================== */
+
+/* FUNDO PRINCIPAL */
+body.dark-mode {
+    background-color: #09090B;
+    color: #F2F2F2;
+}
+
+/* ===== CABEÇALHO ===== */
+
+body.dark-mode .DivCabeçario {
+    background-color: #050506;
+    border-bottom: 2px solid #A92332;
+}
+
+body.dark-mode .DivCabeçario::before {
+    background-image: url("cabecalho-rock.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+body.dark-mode .TextoCabecario,
+body.dark-mode .TextoCarrinho {
+    color: #F2F2F2;
+}
+
+body.dark-mode .TextoCabecario:hover {
+    color: #E34A57;
+}
+
+/* ===== PESQUISA ===== */
+
+body.dark-mode .DivPesquisa {
+    background-color: #202026;
+    border: 1px solid #484850;
+}
+
+body.dark-mode .CampoPesquisa {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+body.dark-mode .CampoPesquisa::placeholder {
+    color: #A0A0AA;
+}
+
+body.dark-mode .BotaoPesquisa {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+/* ===== USUÁRIO E CARRINHO ===== */
+
+body.dark-mode .DivUsurio {
+    background-color: #25252C;
+}
+
+body.dark-mode .DivUsurio:hover {
+    background-color: #A92332;
+}
+
+body.dark-mode .perfil {
+    fill: #FFFFFF;
+}
+
+body.dark-mode .DivDivCarrinho {
+    background-color: #A92332;
+}
+
+body.dark-mode .DivDivCarrinho:hover {
+    background-color: #D13A48;
+}
+
+body.dark-mode .Carrinho {
+    fill: #FFFFFF;
+}
+
+/* ===== TÍTULO DA PÁGINA ===== */
+
+body.dark-mode .DivTextos .D01 {
+    color: #E34A57;
+}
+
+body.dark-mode .DivTextos .D02 {
+    color: #B9B9C2;
+}
+
+/* ===== CARTÕES DOS PEDIDOS ===== */
+
+body.dark-mode .CartaoPedido {
+    background-color: #1B1B21;
+    border: 1px solid #393940;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.45);
+    transition: 0.3s ease;
+}
+
+body.dark-mode .CartaoPedido:hover {
+    border-color: #A92332;
+}
+
+/* NÚMERO DO PEDIDO */
+body.dark-mode .CabecalhoPedido h2 {
+    color: #F2F2F2;
+}
+
+/* DATA DO PEDIDO */
+body.dark-mode .DataPedido {
+    color: #A8A8B0;
+}
+
+/* ===== STATUS DO PEDIDO ===== */
+
+/* Status padrão */
+body.dark-mode .StatusPedido {
+    background-color: #3B3020;
+    color: #FFD580;
+    border: 1px solid #72562C;
+}
+
+/* Status específicos, caso use essas classes */
+body.dark-mode .StatusPedido.pendente {
+    background-color: #3B3020;
+    color: #FFD580;
+    border-color: #72562C;
+}
+
+body.dark-mode .StatusPedido.preparando {
+    background-color: #1D3044;
+    color: #82C8FF;
+    border-color: #335778;
+}
+
+body.dark-mode .StatusPedido.entregue {
+    background-color: #1B382A;
+    color: #85E3AC;
+    border-color: #34664B;
+}
+
+body.dark-mode .StatusPedido.cancelado {
+    background-color: #442127;
+    color: #FF929C;
+    border-color: #793741;
+}
+
+/* ===== ITENS DO PEDIDO ===== */
+
+body.dark-mode .ListaItensPedido {
+    border-top: 1px solid #393940;
+    border-bottom: 1px solid #393940;
+}
+
+body.dark-mode .ItemPedido {
+    color: #D7D7DE;
+}
+
+body.dark-mode .ItemPedido span,
+body.dark-mode .ItemPedido p {
+    color: #D7D7DE;
+}
+
+/* ===== VALOR TOTAL ===== */
+
+body.dark-mode .RodapePedido {
+    color: #F2F2F2;
+}
+
+body.dark-mode .RodapePedido strong:last-child {
+    color: #85E3AC;
+}
+
+/* ===== QUANDO NÃO HOUVER PEDIDOS ===== */
+
+body.dark-mode .PedidoVazio {
+    background-color: #1B1B21;
+    border: 1px solid #393940;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .PedidoVazio h2 {
+    color: #F2F2F2;
+}
+
+body.dark-mode .PedidoVazio p {
+    color: #B9B9C2;
+}
+
+body.dark-mode .PedidoVazio a {
+    background-color: #A92332;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+body.dark-mode .PedidoVazio a:hover {
+    background-color: #D13A48;
+    transform: translateY(-2px);
+}
+
+/* ===== RODAPÉ ===== */
+
+body.dark-mode .DivRodape {
+    background-color: #050506;
+    border-top: 2px solid #A92332;
+}
+
+body.dark-mode .DivRodape::before {
+    background-image: url("cabecalho-rock.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+body.dark-mode .TextoRodape {
+    color: #F2F2F2;
+}
+
+body.dark-mode .DivRodape a {
+    color: #F2F2F2;
+}
+
+body.dark-mode .DivRodape a:hover {
+    color: #E34A57;
+}
+
+/* ===== TRANSIÇÕES ===== */
+
+body,
+.DivCabeçario,
+.DivRodape,
+.DivPesquisa,
+.DivUsurio,
+.DivDivCarrinho,
+.CartaoPedido,
+.PedidoVazio {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* ===== BOTÃO SOL E LUA ===== */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 22px;
+    left: 22px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #17171C;
+    border: 2px solid #393940;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 18px #0005;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #25252C;
+    color: #FFFFFF;
+    border-color: #A92332;
+}
+
+.theme-toggle svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}

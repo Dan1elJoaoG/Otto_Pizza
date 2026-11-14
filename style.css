@@ -1,0 +1,1105 @@
+body{
+    margin: 0;
+    background-color: #F2E3C9;
+}
+.DivCabeçario{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  background-color: #382922;
+  isolation: isolate;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  height: 11vh;
+}
+
+.DivCabeçario::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_cabeçario.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.DivTextosCabeçario{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    height: 96%;
+    width: auto;
+    margin-left: 1%;
+}
+.TextoCabecario{
+    font-size: 22px;
+    color: #F2E3C9;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+.TextoCabecario:hover{
+    color: #B92622;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.DivPesquisa{
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: white;
+}
+.DivUsurio{
+    width: 3.3%;
+    height: 55%;
+    border-radius: 15px;
+    background-color: #F2E3C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.DivUsurio:hover{
+    background-color: #B92622;
+    transition: 0.3s;
+    .perfil{
+  fill: #F2E3C9;
+}
+}
+.perfil{
+    width: 80%;
+    height: auto;
+}
+.DivCarrinho{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+}
+.DivDivCarrinho{
+    width: 33%;
+    height: 55%;
+    background-color: #B92622;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.DivDivCarrinho:hover{
+    background-color: #F2E3C9;
+    transition: 0.3s;
+    .Carrinho{
+    fill: #B92622;
+}
+}
+.Carrinho{
+    width: 80%;
+    height: auto;
+}
+.TextoCarrinho{
+    font-size: 15px;
+    color: #F2E3C9;
+    font-family: "DM Sans", sans-serif;
+    margin-left: 5%;
+}
+.perfil{
+  fill: #B92622;
+  transition: fill 0.3s ease-in-out;
+}
+.perfil:hover{
+  fill: #F2E3C9;
+}
+.Carrinho{
+    fill: #F2E3C9;
+    transition: fill 0.3s ease-in-out;
+}
+.DivPropaganda{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divFundoPropaganda{
+  position: relative;
+  background-color: #526747;
+  isolation: isolate;
+  width: 80%;
+  height: 90%;
+  border-radius: 15px;
+}
+
+.divFundoPropaganda::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_propaganda.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  border-radius: 15px;
+}
+.DivDivPropaganda{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.TextoPropaganda{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3%;
+}
+.TituloPropaganda{
+    text-align: start;
+    font-size: 46px;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    margin: 3%;
+    color: white;
+}
+.SpanPropaganda{
+    color: #D5A052;
+}
+.TextoTextoPropaganda{
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin: 3%;
+}
+.botaoPropaganda{
+    width: 50%;
+    height: 10%;
+    background-color: #D5A052;
+    margin: 3%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.TextoBotao{
+    color: white;
+    font-size: 27px;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+.DivImagem{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.imagemPropaganda{
+    height: 90%;
+    width: auto;
+}
+.botaoPropaganda:hover{
+    background-color: #B92622;
+    transition: 0.3s;
+    .TextoBotao{
+        color: white;
+    }
+}
+.DivProdutosEmAlta{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+.DivTextoProdutosEmAlta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivDivTextoProdutos{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TituloProdutos{
+    font-size: 40px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #B92622;
+    margin: 0;
+}
+.TextoProdutos{
+    font-size: 25px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    color: #526747;
+    margin: 0;
+    margin-top: 1%;
+    line-height: 1.8;
+}
+.DivBotaoProdutos{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botaoProdutos{
+    width: 20%;
+    height: 50%;
+    background-color: #B92622;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.TextoBotaoProdutos{
+    font-size: 25px;
+    color: #fff;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    text-decoration: none;
+}
+.ProdutosProdutos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivProdutosProdutos{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+.DivProdutosFundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FundoProdutos{
+  position: relative;
+  background-color: #D5A052;
+  isolation: isolate;
+  width: 80%;
+  height: 93%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 50% 30% 20%;
+}
+
+.FundoProdutos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_Produtos.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  border-radius: 15px;
+}
+.Produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Produtos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.TituloProdutoVenda{
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #B92622;
+    margin: 0;
+    margin-left: 3%;
+}
+.TextoProdutoVenda{
+    font-size: 19px;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    font-weight: 900;
+    margin: 0;
+    margin-left: 3%;
+    line-height: 1.5;
+}
+.BotaoAdicionarProduto{
+    width: 80%;
+    height: 70%;
+    background-color: #526747;
+    margin-top: 2%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TextoAdicionarProduto{
+    font-size: 22px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+}
+.DivLocais{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divFundoLocais{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.DivLocaisCentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FundoLocais{
+    position: relative;
+    background-color: #382922;
+    isolation: isolate;
+    width: 95%;
+    height: 80%;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+  
+.FundoLocais::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(Background_cabeçario.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 15px;
+  }
+.DivTextoLocais{
+    display: grid;
+    grid-template-rows: 30% 40% 30%;
+}
+.DivCentro1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.DivTituloLocal{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+.TituloLocal{
+    font-size: 45px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #B92622;
+    margin: 0;
+}
+.SpanAmarelo{
+    color: #D5A052;
+}
+.TextoTituloLocal{
+    font-size: 22px;
+    font-family: "DM Sans", sans-serif;
+    color: #382922;
+    font-weight: 900;
+    margin: 0;
+}
+.LocalTitulo{
+    font-size: 35px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #D5A052;
+    margin: 0;
+}
+.LocalTexto{
+    font-size: 19px;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.5;
+    margin-left: 3%;
+}
+.DivTextoLocal{
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Point{
+    width: 10%;
+    height: auto;
+}
+.BotaoLocal{
+    width: 80%;
+    height: 50%;
+    background-color: #B92622;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivImagemLocal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ImagemLocal{
+    width: 90%;
+    height: 85%;
+    background-image: url(ImagemLocal1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+
+}
+.ImagemLocal2{
+    width: 90%;
+    height: 85%;
+    background-image: url(ImagemLocal2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+.DivDelivery{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivFundoDelivery{
+    position: relative;
+    background-color: #EAD8BA;
+    isolation: isolate;
+    width: 80%;
+    height: 85%;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+  
+.DivFundoDelivery::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(Pizza_fundo.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 15px;
+}
+.TextinhoDelivery{
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #B92622;
+    margin: 0;
+    margin-left: 5%;
+}
+.DivTextosDelivery{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.TituloDelivery{
+    font-size: 45px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #382922;
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.SpanVermelho{
+    color: #B92622;
+}
+.TextoDelivery{
+    font-size: 23px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #382922;
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.BotaoDelivery{
+    width: 50%;
+    height: 10%;
+    background-color: #B92622;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.BotaoDelivery:hover{
+    background-color: #526747;
+    transition: 0.3s;
+}
+.DivImagemDelivery{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.ImagemDelivery{
+    height: 80%;
+    width: auto;
+}
+.DivRodape{
+  position: relative;
+  background-color: #382922;
+  isolation: isolate;
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.DivRodape::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_cabeçario.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.DivNaoCentro{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.TextoRodape{
+    font-size: 15px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 1%;
+}
+.botaoProdutos:hover{
+    background-color: #526747;
+    transition: 0.3s;
+}
+.TextoBotaoLocal{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    margin: 0;
+}
+.DivCarrinho{
+    text-decoration: none;
+}
+.DivPesquisa {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.CampoPesquisa {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 2%;
+}
+
+.CampoPesquisa::placeholder {
+    color: #999999;
+}
+
+.BotaoPesquisa {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.DivPesquisa:focus-within {
+    border-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .DivPesquisa {
+        width: 180px;
+    }
+
+    .CampoPesquisa {
+        font-size: 12px;
+    }
+}
+/* ===================================
+   MODO ESCURO - DARK ROCK
+   =================================== */
+
+body.dark-mode {
+    background-color: #09090B;
+    color: #F2F2F2;
+}
+
+/* CABEÇALHO */
+body.dark-mode .DivCabeçario {
+    background-color: #050506;
+    border-bottom: 1px solid #35353B;
+}
+
+body.dark-mode .DivCabeçario::before {
+    opacity: 0.65;
+}
+
+body.dark-mode .TextoCabecario,
+body.dark-mode .TextoCarrinho {
+    color: #F2F2F2;
+}
+
+body.dark-mode .TextoCabecario:hover {
+    color: #E04450;
+}
+
+/* PESQUISA */
+body.dark-mode .DivPesquisa {
+    background-color: #202026;
+    border: 1px solid #484850;
+}
+
+body.dark-mode .CampoPesquisa {
+    background: transparent;
+    color: #FFFFFF;
+}
+
+body.dark-mode .CampoPesquisa::placeholder {
+    color: #A0A0AA;
+}
+
+body.dark-mode .BotaoPesquisa {
+    background: transparent;
+    color: #F2F2F2;
+}
+
+body.dark-mode .DivPesquisa:focus-within {
+    border-color: #D13A48;
+}
+
+/* PERFIL E CARRINHO */
+body.dark-mode .DivUsurio {
+    background-color: #25252C;
+}
+
+body.dark-mode .DivUsurio:hover {
+    background-color: #B32635;
+}
+
+body.dark-mode .perfil {
+    fill: #F2F2F2;
+}
+
+body.dark-mode .DivDivCarrinho {
+    background-color: #A92332;
+}
+
+body.dark-mode .DivDivCarrinho:hover {
+    background-color: #D23B4B;
+}
+
+body.dark-mode .Carrinho {
+    fill: #FFFFFF;
+}
+
+/* PROPAGANDA PRINCIPAL */
+body.dark-mode .divFundoPropaganda {
+    background-color: #17171C;
+    border: 1px solid #393940;
+    box-shadow: 0 8px 30px #0008;
+}
+
+body.dark-mode .divFundoPropaganda::before {
+    opacity: 0.15;
+}
+
+body.dark-mode .TituloPropaganda {
+    color: #F5F5F5;
+}
+
+body.dark-mode .SpanPropaganda {
+    color: #E34A57;
+}
+
+body.dark-mode .TextoTextoPropaganda {
+    color: #C7C7CE;
+}
+
+body.dark-mode .botaoPropaganda {
+    background-color: #A92332;
+}
+
+body.dark-mode .botaoPropaganda:hover {
+    background-color: #D13A48;
+}
+
+body.dark-mode .TextoBotao {
+    color: #FFFFFF;
+}
+
+/* TÍTULOS DOS PRODUTOS */
+body.dark-mode .TituloProdutos {
+    color: #E34A57;
+}
+
+body.dark-mode .TextoProdutos {
+    color: #B9B9C2;
+}
+
+/* BOTÃO DE NAVEGAÇÃO DOS PRODUTOS */
+body.dark-mode .botaoProdutos {
+    background-color: #25252C;
+    border: 1px solid #484850;
+}
+
+body.dark-mode .botaoProdutos:hover {
+    background-color: #A92332;
+}
+
+body.dark-mode .TextoBotaoProdutos {
+    color: #FFFFFF;
+}
+
+/* CARDS DOS PRODUTOS */
+body.dark-mode .FundoProdutos {
+    background-color: #1B1B21;
+    border: 1px solid #393940;
+    box-shadow: 0 6px 24px #0008;
+}
+
+body.dark-mode .FundoProdutos::before {
+    opacity: 0.08;
+}
+
+body.dark-mode .TituloProdutoVenda {
+    color: #F06A75;
+}
+
+body.dark-mode .TextoProdutoVenda {
+    color: #E0E0E5;
+}
+
+/* ADICIONAR AO CARRINHO */
+body.dark-mode .BotaoAdicionarProduto {
+    background-color: #A92332;
+    cursor: pointer;
+    transition: background-color .3s,
+                transform .3s;
+}
+
+body.dark-mode .BotaoAdicionarProduto:hover {
+    background-color: #D13A48;
+    transform: translateY(-2px);
+}
+
+body.dark-mode .TextoAdicionarProduto {
+    color: #FFFFFF;
+}
+
+/* LOCALIZAÇÃO */
+body.dark-mode .FundoLocais {
+    background-color: #19191E;
+    border: 1px solid #393940;
+    box-shadow: 0 6px 24px #0007;
+}
+
+body.dark-mode .FundoLocais::before {
+    opacity: 0.12;
+}
+
+body.dark-mode .TituloLocal {
+    color: #E34A57;
+}
+
+body.dark-mode .TextoTituloLocal {
+    color: #D0D0D7;
+}
+
+body.dark-mode .LocalTitulo {
+    color: #F06A75;
+}
+
+body.dark-mode .LocalTexto {
+    color: #D7D7DD;
+}
+
+body.dark-mode .SpanAmarelo {
+    color: #E34A57;
+}
+
+body.dark-mode .BotaoLocal {
+    background-color: #A92332;
+}
+
+body.dark-mode .BotaoLocal:hover {
+    background-color: #D13A48;
+}
+
+body.dark-mode .TextoBotaoLocal {
+    color: #FFFFFF;
+}
+
+/* DELIVERY */
+body.dark-mode .DivFundoDelivery {
+    background-color: #17171C;
+    border: 1px solid #393940;
+    box-shadow: 0 8px 30px #0008;
+}
+
+body.dark-mode .DivFundoDelivery::before {
+    opacity: 0.08;
+}
+
+body.dark-mode .TextinhoDelivery {
+    color: #E34A57;
+}
+
+body.dark-mode .TituloDelivery {
+    color: #F2F2F2;
+}
+
+body.dark-mode .TextoDelivery {
+    color: #C7C7CE;
+}
+
+body.dark-mode .SpanVermelho {
+    color: #E34A57;
+}
+
+body.dark-mode .BotaoDelivery {
+    background-color: #A92332;
+}
+
+body.dark-mode .BotaoDelivery:hover {
+    background-color: #D13A48;
+}
+
+/* RODAPÉ */
+body.dark-mode .DivRodape {
+    background-color: #050506;
+    border-top: 1px solid #35353B;
+}
+
+body.dark-mode .DivRodape::before {
+    opacity: 0.3;
+}
+
+body.dark-mode .TextoRodape {
+    color: #C7C7CE;
+}
+
+/* TRANSIÇÕES */
+body,
+.DivCabeçario,
+.DivPesquisa,
+.DivUsurio,
+.DivDivCarrinho,
+.divFundoPropaganda,
+.FundoProdutos,
+.FundoLocais,
+.DivFundoDelivery,
+.DivRodape,
+.botaoPropaganda,
+.botaoProdutos,
+.BotaoAdicionarProduto,
+.BotaoLocal,
+.BotaoDelivery {
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+/* BOTÃO SOL / LUA */
+.theme-toggle {
+    position: fixed;
+    bottom: 22px;
+    left: 22px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #17171C;
+    border: 2px solid #393940;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 18px #0005;
+    transition: .3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #25252C;
+    color: #FFFFFF;
+    border-color: #A92332;
+}
+
+.theme-toggle svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+/* ===== CABEÇALHO DARK ROCK ===== */
+
+/* Fundo do cabeçalho */
+body.dark-mode .DivCabeçario {
+    background-color: #050506 !important;
+    border-bottom: 2px solid #A92332;
+}
+
+/* Imagem dos tentáculos no modo escuro */
+body.dark-mode .DivCabeçario::before {
+    background-image: url("cabecalho-rock.png") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1 !important;
+    filter: none;
+}
+
+/* Links do cabeçalho */
+body.dark-mode .TextoCabecario {
+    color: #F2F2F2 !important;
+}
+
+body.dark-mode .TextoCabecario:hover {
+    color: #E34A57 !important;
+}
+
+/* Barra de pesquisa */
+body.dark-mode .DivPesquisa {
+    background-color: #202026 !important;
+    border: 1px solid #55555D !important;
+}
+
+body.dark-mode .CampoPesquisa {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .BotaoPesquisa {
+    color: #FFFFFF !important;
+}
+
+/* Ícone do usuário */
+body.dark-mode .DivUsurio {
+    background-color: #25252C !important;
+}
+
+body.dark-mode .perfil {
+    fill: #FFFFFF !important;
+}
+
+/* Carrinho */
+body.dark-mode .DivDivCarrinho {
+    background-color: #A92332 !important;
+}
+
+body.dark-mode .Carrinho {
+    fill: #FFFFFF !important;
+}
+
+body.dark-mode .TextoCarrinho {
+    color: #FFFFFF !important;
+}
+/* ===== CABEÇALHO E RODAPÉ DARK ROCK ===== */
+
+body.dark-mode .DivCabeçario,
+body.dark-mode .DivRodape {
+    background-color: #050506 !important;
+}
+
+/* Mesma imagem para os dois */
+body.dark-mode .DivCabeçario::before,
+body.dark-mode .DivRodape::before {
+    background-image: url("cabecalho-rock.png") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3 !important;
+    filter: none;
+}
+
+/* Detalhes vermelhos */
+body.dark-mode .DivCabeçario {
+    border-bottom: 2px solid #A92332;
+}
+
+body.dark-mode .DivRodape {
+    border-top: 2px solid #A92332;
+}
+
+/* Textos do rodapé */
+body.dark-mode .TextoRodape {
+    color: #F2F2F2 !important;
+}

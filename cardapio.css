@@ -1,0 +1,739 @@
+body{
+    margin: 0;
+    background-color: #F2E3C9;
+}
+.DivCabeçario{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  background-color: #382922;
+  isolation: isolate;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  height: 11vh;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.DivCabeçario::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_cabeçario.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.DivTextosCabeçario{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    height: 90%;
+    width: auto;
+    margin-left: 1%;
+}
+.TextoCabecario{
+    font-size: 22px;
+    color: #F2E3C9;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.TextoCabecario:hover{
+    color: #B92622;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.DivPesquisa{
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: white;
+}
+.DivUsurio{
+    width: 3.3%;
+    height: 55%;
+    border-radius: 15px;
+    background-color: #F2E3C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.DivUsurio:hover{
+    background-color: #B92622;
+    transition: 0.3s;
+    .perfil{
+  fill: #F2E3C9;
+}
+}
+.perfil{
+    width: 80%;
+    height: auto;
+}
+.DivCarrinho{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+
+}
+.DivDivCarrinho{
+    width: 33%;
+    height: 55%;
+    background-color: #B92622;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.DivDivCarrinho:hover{
+    background-color: #F2E3C9;
+    transition: 0.3s;
+    .Carrinho{
+    fill: #B92622;
+}
+}
+.Carrinho{
+    width: 80%;
+    height: auto;
+}
+.TextoCarrinho{
+    font-size: 15px;
+    color: #F2E3C9;
+    font-family: "DM Sans", sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.perfil{
+  fill: #B92622;
+  transition: fill 0.3s ease-in-out;
+}
+.perfil:hover{
+  fill: #F2E3C9;
+}
+.Carrinho{
+    fill: #F2E3C9;
+    transition: fill 0.3s ease-in-out;
+}
+.divEscolher{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivDosbotoes{
+    width: 80%;
+    height: 60%;
+    background-color: #EAD8BA;
+    border: 1px solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FundoBotaoEscolher{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #382922;
+    text-decoration: none;
+}
+.IconPizza{
+    height: 55%;
+    width: auto;
+}
+.TituloPizzas{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 1%;
+    font-family: "DM Sans", sans-serif;
+}
+.DivDentroEscolher{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.DivDentroEscolher:hover{
+    background-color: #caa978;
+    transition: 0.3s;
+}
+.DivTituloPizzasTradicionais{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivDentroTituloPizzasTradicionais{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.TItuloPizzasTradicionais{
+    font-size: 40px;
+    color: #526747;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    margin: 0;
+}
+.PizzasTradicionais{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivPizzasTradicionais{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);
+}
+.DivProdutosEmAlta{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+.DivTextoProdutosEmAlta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivDivTextoProdutos{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TituloProdutos{
+    font-size: 40px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #B92622;
+    margin: 0;
+}
+.TextoProdutos{
+    font-size: 25px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    color: #526747;
+    margin: 0;
+    margin-top: 1%;
+    line-height: 1.8;
+}
+.DivBotaoProdutos{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botaoProdutos{
+    width: 20%;
+    height: 50%;
+    background-color: #B92622;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.TextoBotaoProdutos{
+    font-size: 20px;
+    color: #fff;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+}
+.ProdutosProdutos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivProdutosProdutos{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+.DivProdutosFundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FundoProdutos{
+  position: relative;
+  background-color: #D5A052;
+  isolation: isolate;
+  width: 70%;
+  height: 93%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 45% 35% 20%;
+  margin-top: 4%;
+}
+
+.FundoProdutos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_Produtos.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  border-radius: 15px;
+}
+.Produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Produtos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.TituloProdutoVenda{
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #B92622;
+    margin: 0;
+    margin-left: 3%;
+}
+.TextoProdutoVenda{
+    font-size: 17px;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    font-weight: 900;
+    margin: 0;
+    margin-left: 3%;
+    line-height: 1.5;
+}
+.BotaoAdicionarProduto{
+    width: 80%;
+    height: 67%;
+    background-color: #526747;
+    margin-top: 2%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TextoAdicionarProduto{
+    font-size: 22px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+}
+.ProdutoBotao{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.DivCarrinho{
+    text-decoration: none;
+}
+.DivRodape{
+  position: relative;
+  background-color: #382922;
+  isolation: isolate;
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  margin-top: 3%;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.DivRodape::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(Background_cabeçario.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.DivNaoCentro{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.TextoRodape{
+    font-size: 15px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 1%;
+}
+.botaoProdutos:hover{
+    background-color: #526747;
+    transition: 0.3s;
+}
+.TextoBotaoLocal{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    margin: 0;
+}
+.DivPesquisa {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.CampoPesquisa {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 2%;
+}
+
+.CampoPesquisa::placeholder {
+    color: #999999;
+}
+
+.BotaoPesquisa {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.DivPesquisa:focus-within {
+    border-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .DivPesquisa {
+        width: 180px;
+    }
+
+    .CampoPesquisa {
+        font-size: 12px;
+    }
+}
+/* ==========================================
+   MODO DARK ROCK - CARDÁPIO
+   ========================================== */
+
+/* FUNDO PRINCIPAL */
+body.dark-mode {
+    background-color: #09090B;
+    color: #F2F2F2;
+}
+
+/* ===== CABEÇALHO ===== */
+
+body.dark-mode .DivCabeçario {
+    background-color: #050506;
+    border-bottom: 2px solid #A92332;
+}
+
+body.dark-mode .DivCabeçario::before {
+    background-image: url("cabecalho-rock.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+body.dark-mode .TextoCabecario,
+body.dark-mode .TextoCarrinho {
+    color: #F2F2F2;
+}
+
+body.dark-mode .TextoCabecario:hover {
+    color: #E34A57;
+}
+
+/* PESQUISA */
+
+body.dark-mode .DivPesquisa {
+    background-color: #202026;
+    border: 1px solid #484850;
+}
+
+body.dark-mode .CampoPesquisa {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+body.dark-mode .CampoPesquisa::placeholder {
+    color: #A0A0AA;
+}
+
+body.dark-mode .BotaoPesquisa {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+/* USUÁRIO E CARRINHO */
+
+body.dark-mode .DivUsurio {
+    background-color: #25252C;
+}
+
+body.dark-mode .DivUsurio:hover {
+    background-color: #A92332;
+}
+
+body.dark-mode .perfil {
+    fill: #FFFFFF;
+}
+
+body.dark-mode .DivDivCarrinho {
+    background-color: #A92332;
+}
+
+body.dark-mode .DivDivCarrinho:hover {
+    background-color: #D13A48;
+}
+
+body.dark-mode .Carrinho {
+    fill: #FFFFFF;
+}
+
+/* ===== BARRA DE CATEGORIAS ===== */
+
+body.dark-mode .DivDosbotoes {
+    background-color: #19191F;
+    border: 1px solid #393940;
+    box-shadow: 0 4px 18px #0005;
+}
+
+body.dark-mode .FundoBotaoEscolher {
+    color: #E0E0E5;
+}
+
+body.dark-mode .TituloPizzas {
+    color: #E0E0E5;
+}
+
+body.dark-mode .DivDentroEscolher {
+    background-color: transparent;
+}
+
+body.dark-mode .DivDentroEscolher:hover {
+    background-color: #A92332;
+}
+
+body.dark-mode .DivDentroEscolher:hover .TituloPizzas {
+    color: #FFFFFF;
+}
+
+/* ÍCONES DAS CATEGORIAS */
+
+body.dark-mode .IconPizza {
+    filter: brightness(0) invert(1);
+}
+
+/* ===== TÍTULOS DAS SEÇÕES ===== */
+
+body.dark-mode .TItuloPizzasTradicionais {
+    color: #E34A57;
+}
+
+body.dark-mode .TituloProdutos {
+    color: #E34A57;
+}
+
+body.dark-mode .TextoProdutos {
+    color: #B9B9C2;
+}
+
+/* ===== CARDS DAS PIZZAS ===== */
+
+body.dark-mode .FundoProdutos {
+    background-color: #1B1B21;
+    border: 1px solid #393940;
+    box-shadow: 0 6px 24px #0008;
+    transition: 0.3s ease;
+}
+
+body.dark-mode .FundoProdutos::before {
+    opacity: 0.08;
+}
+
+body.dark-mode .FundoProdutos:hover {
+    background-color: #24242B;
+    border-color: #A92332;
+    transform: translateY(-3px);
+}
+
+/* NOME E DESCRIÇÃO */
+
+body.dark-mode .TituloProdutoVenda {
+    color: #F06A75;
+}
+
+body.dark-mode .TextoProdutoVenda {
+    color: #D7D7DE;
+}
+
+/* ===== BOTÃO ADICIONAR ===== */
+
+body.dark-mode .BotaoAdicionarProduto {
+    background-color: #A92332;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+body.dark-mode .BotaoAdicionarProduto:hover {
+    background-color: #D13A48;
+    transform: translateY(-2px);
+}
+
+body.dark-mode .TextoAdicionarProduto {
+    color: #FFFFFF;
+}
+
+/* ===== BOTÕES DE NAVEGAÇÃO ===== */
+
+body.dark-mode .botaoProdutos {
+    background-color: #25252C;
+    border: 1px solid #484850;
+}
+
+body.dark-mode .botaoProdutos:hover {
+    background-color: #A92332;
+}
+
+body.dark-mode .TextoBotaoProdutos {
+    color: #FFFFFF;
+}
+
+/* ===== RODAPÉ ===== */
+
+body.dark-mode .DivRodape {
+    background-color: #050506;
+    border-top: 2px solid #A92332;
+}
+
+body.dark-mode .DivRodape::before {
+    background-image: url("cabecalho-rock.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+body.dark-mode .TextoRodape {
+    color: #F2F2F2;
+}
+
+body.dark-mode .DivRodape a {
+    color: #F2F2F2;
+}
+
+body.dark-mode .DivRodape a:hover {
+    color: #E34A57;
+}
+
+/* ===== TRANSIÇÕES ===== */
+
+body,
+.DivCabeçario,
+.DivRodape,
+.DivDosbotoes,
+.DivPesquisa,
+.DivUsurio,
+.DivDivCarrinho,
+.FundoProdutos,
+.BotaoAdicionarProduto,
+.botaoProdutos {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* ===== BOTÃO SOL E LUA ===== */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 22px;
+    left: 22px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #17171C;
+    border: 2px solid #393940;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 18px #0005;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #25252C;
+    color: #FFFFFF;
+    border-color: #A92332;
+}
+
+.theme-toggle svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
